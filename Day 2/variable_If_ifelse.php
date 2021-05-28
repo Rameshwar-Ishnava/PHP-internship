@@ -1,4 +1,6 @@
-<?php
+<html>
+	<title> PHP </title><?php
+<body>
 $name = "Rameshwar";
 $age = 23;
  
@@ -19,3 +21,5 @@ else
   echo "$name Your age is greater than 40!";
 }
 ?>
+<body>
+<html>
