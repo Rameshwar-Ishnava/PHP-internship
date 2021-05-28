@@ -1,6 +1,7 @@
 <html>
-	<title> PHP </title><?php
+	<title> PHP </title>
 <body>
+<?php
 $name = "Rameshwar";
 $age = 23;
  
