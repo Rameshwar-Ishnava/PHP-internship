@@ -2,7 +2,7 @@
 
 Table Tag Registration Form
 
-7Welcome to PHP Variables in PHP if...else in PHP Switch case in PHP For Loop in PHP and other C static programs like leap year etc. Date & Time Function in PHP Math Functions in PHP String Functioins in PHP Function in PHP array in php
+Welcome to PHP Variables in PHP if...else in PHP Switch case in PHP For Loop in PHP and other C static programs like leap year etc. Date & Time Function in PHP Math Functions in PHP String Functioins in PHP Function in PHP array in php
 
 For Loop program using Table Tag convert day 2's static program dynamic through form get and post method Registration Form Using PHP
 
