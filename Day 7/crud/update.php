@@ -44,7 +44,7 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
         // Prepare an update statement
         $sql = "UPDATE employees SET name=?, address=?, salary=? WHERE id=?";
          
-        if($stmt = mysqli_prepare($link, $sql)){
+        if($stmt = mysqli_prepare($conn, $sql)){
             // Bind variables to the prepared statement as parameters
             mysqli_stmt_bind_param($stmt, "sssi", $param_name, $param_address, $param_salary, $param_id);
             
@@ -69,7 +69,7 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
     }
     
     // Close connection
-    mysqli_close($link);
+    mysqli_close($conn);
 } else{
     // Check existence of id parameter before processing further
     if(isset($_GET["id"]) && !empty(trim($_GET["id"]))){
@@ -78,7 +78,7 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
         
         // Prepare a select statement
         $sql = "SELECT * FROM employees WHERE id = ?";
-        if($stmt = mysqli_prepare($link, $sql)){
+        if($stmt = mysqli_prepare($conn, $sql)){
             // Bind variables to the prepared statement as parameters
             mysqli_stmt_bind_param($stmt, "i", $param_id);
             
@@ -113,7 +113,7 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
         mysqli_stmt_close($stmt);
         
         // Close connection
-        mysqli_close($link);
+        mysqli_close($conn);
     }  else{
         // URL doesn't contain id parameter. Redirect to error page
         header("location: error.php");
